@@ -61,25 +61,25 @@
     switch([sender tag]){
         case 10:
             _subtitleTxt.text = [_resultlabel.text stringByAppendingString:@"+"];
-            _firstNum=[_resultlabel.text integerValue];
+            _firstNum+=[_resultlabel.text integerValue];
             _opr = 1;
             _resultlabel.text = @"";
             break;
         case 20:
             _subtitleTxt.text = [_resultlabel.text stringByAppendingString:@"-"];
-            _firstNum=[_resultlabel.text integerValue];
+            _firstNum-=[_resultlabel.text integerValue];
             _opr = 2;
             _resultlabel.text = @"";
             break;
         case 30:
             _subtitleTxt.text = [_resultlabel.text stringByAppendingString:@"*"];
-            _firstNum=[_resultlabel.text integerValue];
+            _firstNum*=[_resultlabel.text integerValue];
             _opr = 3;
             _resultlabel.text = @"";
             break;
         case 40:
             _subtitleTxt.text = [_resultlabel.text stringByAppendingString:@"/"];
-            _firstNum=[_resultlabel.text integerValue];
+            _firstNum/=[_resultlabel.text integerValue];
             _opr = 4;
             _resultlabel.text = @"";
             break;
