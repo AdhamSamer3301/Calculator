@@ -130,7 +130,7 @@
             if (_secondNum == 0) {
                 _resultlabel.text = [NSString stringWithFormat:@"NiL"];
             } else {
-                _res = _firstNum / _secondNum;
+                _res = _firstNum / (float)_secondNum;
                 _resultlabel.text = [NSString stringWithFormat:@"%0.1f", _res];
             }
 
